@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Cá Nhân</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3B82F6",
+              secondary: "#10B981",
+              dark: "#1F2937",
+              light: "#F9FAFB",
+              accent: "#8B5CF6",
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "fade-in": "fadeIn 0.8s ease-out forwards",
+              "slide-in": "slideIn 0.8s ease-out forwards",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-15px)" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideIn: {
+                "0%": { opacity: "0", transform: "translateX(30px)" },
+                "100%": { opacity: "1", transform: "translateX(0)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Background Decorations -->
+    <div class="decoration decoration-1"></div>
+    <div class="decoration decoration-2"></div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Profile Card - Bố cục ngang -->
+      <div class="profile-card">
+        <!-- Left Column - Avatar and Info -->
+        <div class="left-column">
+          <!-- Avatar -->
+          <div class="avatar-container animate-fade-in">
+            <div class="avatar animate-float">
+              <img
+                src="/NguyenHoangAnhKhoa.jpg"
+                alt="Avatar"
+                class="avatar-img"
+              />
+            </div>
+
+            <!-- Name and Title -->
+            <h1 class="name animate-fade-in animate-delay-100">
+              Nguyễn Hoàng Anh Khoa
+            </h1>
+            <h2 class="title animate-fade-in animate-delay-200">
+              Full stack developer
+            </h2>
+
+            <!-- Social Links -->
+            <div class="social-links animate-fade-in animate-delay-500">
+              <a href="#" class="social-icon youtube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon github">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="social-icon instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column - Bio and Skills -->
+        <div class="right-column">
+          <!-- Bio -->
+          <div class="bio-container animate-fade-in animate-delay-300">
+            <h3 class="section-title">About me</h3>
+            <p class="bio-text text">
+              Hi guy! My name's Nguyễn Hoàng Anh Khoa, I'm a full stack
+              developer with a passion for creating dynamic and responsive web
+              applications. I have experience in both front-end and back-end
+              development, and I love to learn new technologies and improve my
+              skills. In my free time, I enjoy exploring new programming
+              languages and frameworks, as well as contributing to open source
+              projects. I believe in the power of collaboration and community,
+              and I'm always looking for opportunities to connect with other
+              developers and share knowledge. Let's build something amazing
+              together!
+            </p>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills-container animate-fade-in animate-delay-400">
+            <h3 class="section-title">Kỹ Năng Chuyên Môn</h3>
+            <div class="skills-grid">
+              <div class="skill-item animate-slide-in animate-delay-500">
+                <div class="skill-icon">
+                  <i class="fab fa-js"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript</span>
+                  <div class="skill-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item animate-slide-in animate-delay-600">
+                <div class="skill-icon">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">React & Next.js</span>
+                  <div class="skill-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item animate-slide-in animate-delay-700">
+                <div class="skill-icon">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">Node.js & Express</span>
+                  <div class="skill-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-item animate-slide-in animate-delay-800">
+                <div class="skill-icon">
+                  <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="skill-info">
+                  <span class="skill-name">UI/UX Design</span>
+                  <div class="skill-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
